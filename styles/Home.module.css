@@ -1,5 +1,5 @@
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   /*min-height: 100vh;*/
   padding: 0 0.5rem;
   margin: 0 auto;
@@ -89,7 +89,8 @@
 }
 
 .descriptionText {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  text-align: justify;
   position: relative;
   top: 2.5rem;
   font-weight: 300;

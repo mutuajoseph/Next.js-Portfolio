@@ -50,8 +50,8 @@ export default function Home() {
                   <Image
                       className={styles.headimage}
                       src="/images/me.jpg"
-                      height={495} // Desired size with correct aspect ratio
-                      width={700} // Desired size with correct aspect ratio
+                      height={450} // Desired size with correct aspect ratio
+                      width={600} // Desired size with correct aspect ratio
                       alt="Your Name"
                   />
               </div>
