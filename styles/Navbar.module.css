@@ -1,0 +1,50 @@
+.nav {
+    /*background: red;*/
+    height: 100px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: .8rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.h2 {
+    margin: 0;
+    font-size: 2.3rem;
+    padding: 1rem 0;
+    transform: rotate(-40deg);
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #054a29;
+}
+
+.bgBlue {
+    color: #114b5f;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+
+}
+
+.listItem {
+    margin: 0 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.sayHi {
+    border: 3px solid #054a29;
+    border-radius: 8px;
+    padding: .3rem .8rem;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    outline: none;
+    color: #054a29;
+    background: #fff;
+}
