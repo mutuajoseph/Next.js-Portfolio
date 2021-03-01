@@ -11,7 +11,7 @@
 
 .main {
   padding: 1rem 0;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   flex: 1;
   display: flex;
   justify-content: space-between;
@@ -67,32 +67,41 @@
   line-height: 1.15;
   font-size: 4rem;
   position: relative;
-  top: 3rem;
+  top: 1rem;
   /*left: 1rem;*/
 }
 
 .socials {
   position: relative;
-  top: 4rem;
+  top: 1.5rem;
 }
 
 .social {
   font-size: 2rem;
+  transition: all .5s;
+}
+
+.socialLink {
+  text-decoration: none;
+  color: #000;
+}
+
+.socialLink:hover {
+  color: #054a29;
 }
 
 .description {
   /*line-height: ;*/
   font-size: 1.5rem;
   position: relative;
-  top: 2.5rem;
+  top: .5rem;
   word-spacing: .2rem;
 }
 
 .descriptionText {
   font-size: 1.2rem;
-  text-align: justify;
   position: relative;
-  top: 2.5rem;
+  top: 1rem;
   font-weight: 300;
   word-spacing: .3rem;
 }
@@ -114,6 +123,7 @@
 .headerText {
   font-size: 2rem;
 }
+
 
 .aboutText {
   text-align: center;

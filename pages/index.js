@@ -41,17 +41,27 @@ export default function Home() {
 
                   {/*social media links*/}
                   <div className={styles.socials}>
-                      <AiFillLinkedin className={styles.social} />
-                      <AiFillGithub  className={styles.social} style={{marginLeft: '1.2rem'}}/>
-                      <IoLogoTwitter className={styles.social} style={{marginLeft: '1.2rem'}}/>
+                      <a className={styles.socialLink} href="https://www.linkedin.com/in/joseph-mutua-123245137/" target="_blank">
+                          <AiFillLinkedin className={styles.social} />
+                      </a>
+
+                      <a className={styles.socialLink} href="https://github.com/mutuajoseph/" target="_blank">
+                          <AiFillGithub  className={styles.social} style={{marginLeft: '1.2rem'}}/>
+                      </a>
+
+                      <a className={styles.socialLink} href="https://twitter.com/_JWMutua" target="_blank">
+                          <IoLogoTwitter className={styles.social} style={{marginLeft: '1.2rem'}}/>
+                      </a>
+
+
                   </div>
               </div>
               <div>
                   <Image
                       className={styles.headimage}
                       src="/images/me.jpg"
-                      height={450} // Desired size with correct aspect ratio
-                      width={600} // Desired size with correct aspect ratio
+                      height={380} // Desired size with correct aspect ratio
+                      width={540} // Desired size with correct aspect ratio
                       alt="Your Name"
                   />
               </div>
