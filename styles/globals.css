@@ -8,13 +8,13 @@ body {
 }
 
 a {
-  color: #054a29;
+  color: #820263;
   text-decoration: none;
   transition: all .3s;
 }
 
 a:hover {
-  color: #0070f3;
+  color: #820263;
 }
 
 * {
