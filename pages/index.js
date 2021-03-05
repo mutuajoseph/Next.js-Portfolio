@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <div className={styles.container}>
           <main className={styles.main}>
-              <div style={{width: '500px'}}>
+              <div className={styles.mainDiv}>
                   <h1 className={styles.title}>
                       Hi{' '}
                       <Link href="/posts/about">
@@ -73,8 +73,8 @@ export default function Home() {
                       <Image
                           src="/images/coolSpaces.jpg"
                           className={styles.image}
-                          width={370}
-                          height={250}
+                          width={350}
+                          height={240}
                           alt="coolSpaces"
                       />
                       <h4 className={styles.cardHeaderText}>Cool Spaces</h4>
@@ -83,8 +83,8 @@ export default function Home() {
                       <Image
                           src="/images/financeMe.jpg"
                           className={styles.image}
-                          width={370}
-                          height={250}
+                          width={350}
+                          height={240}
                           alt="coolSpaces"
                       />
                       <h4 className={styles.cardHeaderText}>FinanceMe</h4>
@@ -93,8 +93,8 @@ export default function Home() {
                       <Image
                           src="/images/MySpa.jpg"
                           className={styles.image}
-                          width={370}
-                          height={250}
+                          width={350}
+                          height={240}
                           alt="coolSpaces"
                       />
                       <h4 className={styles.cardHeaderText}>MySpa</h4>
@@ -107,7 +107,7 @@ export default function Home() {
           <section className={styles.about}>
               <div className={styles.container}>
                 <h2 className={styles.aboutText}>About Me</h2>
-                  <p style={{fontSize: '1.3rem', textAlign: 'justify'}}>
+                  <p className={styles.text}>
                       Hello! My name is Joseph Wambua, I'm a Web Developer and I
                       specialize in React and HTML & CSS. I care deeply about building
                       interfaces that are accessible and enjoyable for everyone to use.
@@ -115,23 +115,23 @@ export default function Home() {
                       My favorite technology to work with right now is Typescript.
                   </p>
 
-                  <p style={{fontSize: '1.3rem', textAlign: 'justify'}}>Here are a few technologies I've been working with recently:</p>
+                  <p className={styles.text}>Here are a few technologies I've been working with recently:</p>
                   <div className={styles.lang}>
-                      <div style={{width: '300px'}}>
+                      <div style={{width: '290px'}}>
                         <ul>
                             <li className={styles.listItem}>React</li>
                             <li className={styles.listItem}>Redux</li>
                             <li className={styles.listItem}>MongoDB</li>
                         </ul>
                       </div>
-                      <div style={{width: '300px'}}>
+                      <div style={{width: '290px'}}>
                           <ul>
                               <li className={styles.listItem}>Python</li>
                               <li className={styles.listItem}>HTML&CSS</li>
                               <li className={styles.listItem}>PostgreSQL</li>
                           </ul>
                       </div>
-                      <div style={{width: '300px'}}>
+                      <div style={{width: '290px'}}>
                           <ul>
                               <li className={styles.listItem}>Javascript</li>
                               <li className={styles.listItem}></li>

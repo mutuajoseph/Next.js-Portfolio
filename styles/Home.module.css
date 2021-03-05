@@ -111,8 +111,13 @@
   transition: all 2s;
 }
 
+.text {
+  font-size: 1.3rem;
+  text-align: justify
+}
+
 .headimage {
-  border-radius: 20px;
+  border-radius: 76% 24% 27% 73% / 50% 28% 72% 50% ;
   transition: all 2s;
 }
 
@@ -207,9 +212,58 @@
   height: 1em;
 }
 
+.mainDiv {
+  width: 500px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+}
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .main {
+    flex-direction: column-reverse;
+  }
+
+  .title {
+    font-size: 3.2rem;
+    text-align: center;
+  }
+
+  .mainDiv {
+    width: 100%;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .descriptionText {
+    text-align: center;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    padding: 0 .2rem;
+    text-align: left;
+  }
+
+  .listItem {
+    font-size: 1rem;
+  }
+  .socials {
+    text-align: center;
+    margin-top: 2.5em;
+  }
+}
+
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px){
 }

@@ -35,6 +35,14 @@
     margin: 0 1.2rem;
     font-size: 1.2rem;
     font-weight: 900;
+    cursor: pointer;
+    padding-bottom: .4rem;
+    transition: all 2s;
+}
+
+.listItem:hover {
+    color: #054a29;
+    border-bottom: 1px solid #054a29;
 }
 
 .sayHi {
@@ -42,6 +50,7 @@
     border-radius: 8px;
     padding: .3rem .8rem;
     margin-left: 1rem;
+    margin-bottom: .4rem;
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
