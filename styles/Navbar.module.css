@@ -25,6 +25,12 @@
     color: #8c1c13;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .list {
     display: flex;
     list-style: none;
@@ -46,7 +52,7 @@
 }
 
 .sayHi {
-    border: 3px solid #054a29;
+    border: 3px solid #f15152;
     border-radius: 8px;
     padding: .3rem .8rem;
     margin-left: 1rem;
@@ -54,6 +60,30 @@
     font-size: 1.2rem;
     font-weight: 600;
     outline: none;
-    color: #054a29;
-    background: #fff;
+    color: #fff;
+    background: #f15152;
+}
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .flex {
+        justify-content: space-around;
+    }
+
+    .sayHi {
+        border: 3px solid #f15152;
+        border-radius: 8px;
+        padding: .3rem .6rem;
+        margin-left: 1rem;
+        margin-bottom: .4rem;
+        font-size: .8rem;
+        font-weight: 600;
+        outline: none;
+        color: #fff;
+        background: #f15152;
+    }
+
+    .container {
+        padding: .8rem .5rem;
+    }
 }
