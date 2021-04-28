@@ -66,7 +66,7 @@ export default function Home() {
                   />
               </div>
           </main>
-          <section className={styles.projects}>
+          {/* <section className={styles.projects}>
               <h2 className={styles.headerText}>My Projects</h2>
               <div className={styles.cards}>
                   <div>
@@ -100,38 +100,47 @@ export default function Home() {
                       <h4 className={styles.cardHeaderText}>MySpa</h4>
                   </div>
               </div>
-          </section>
+          </section> */}
       </div>
 
           {/*About me */}
+        <div className={styles.container}>
           <section className={styles.about}>
-              <div className={styles.container}>
-                <h2 className={styles.aboutText}>About Me</h2>
+              <div>
+                  <Image
+                      src="/images/about.jpeg"
+                      height={500} // Desired size with correct aspect ratio
+                      width={400} // Desired size with correct aspect ratio
+                      alt="Your Name"
+                  />
+              </div>
+              <div>
+                  <h2 className={styles.aboutText}>About Me</h2>
                   <p className={styles.text}>
-                      Hello! My name is Joseph Wambua, I'm a Web Developer and I
-                      specialize in React and HTML & CSS. I care deeply about building
-                      interfaces that are accessible and enjoyable for everyone to use.
-                      I love that there is always new things to learn and new problems to solve.
+                      Hello! My name is Joseph Wambua, I'm a Web Developer and I <br/>
+                      specialize in React and HTML & CSS. I care deeply about building <br/>
+                      interfaces that are accessible and enjoyable for everyone to use. <br/>
+                      I love that there is always new things to learn and new problems to solve. <br/>
                       My favorite technology to work with right now is Typescript.
                   </p>
 
                   <p className={styles.text}>Here are a few technologies I've been working with recently:</p>
                   <div className={styles.lang}>
-                      <div style={{width: '290px'}}>
-                        <ul>
-                            <li className={styles.listItem}>React</li>
-                            <li className={styles.listItem}>Redux</li>
-                            <li className={styles.listItem}>MongoDB</li>
-                        </ul>
+                      <div>
+                          <ul>
+                              <li className={styles.listItem}>React</li>
+                              <li className={styles.listItem}>Redux</li>
+                              <li className={styles.listItem}>MongoDB</li>
+                          </ul>
                       </div>
-                      <div style={{width: '290px'}}>
+                      <div>
                           <ul>
                               <li className={styles.listItem}>Python</li>
                               <li className={styles.listItem}>HTML&CSS</li>
                               <li className={styles.listItem}>PostgreSQL</li>
                           </ul>
                       </div>
-                      <div style={{width: '290px'}}>
+                      <div>
                           <ul>
                               <li className={styles.listItem}>Javascript</li>
                               <li className={styles.listItem}></li>
@@ -140,19 +149,36 @@ export default function Home() {
                       </div>
                   </div>
               </div>
-          </section>
-        <div className={styles.container}>
-          <footer className={styles.footer}>
-              <a
-                  href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                  Designed by{' '} Wambua.
-              </a>
-          </footer>
-      </div>
 
+          </section>
+        </div>
+
+          <footer className={styles.footer}>
+              <div className={styles.container}>
+                  <div className={styles.links}>
+                      <a
+                          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          JW
+                      </a>
+                      <div style={{display: 'flex'}}>
+                          <a className={styles.socialLink} href="https://www.linkedin.com/in/joseph-mutua-123245137/" target="_blank">
+                              <AiFillLinkedin className={styles.social} />
+                          </a>
+
+                          <a className={styles.socialLink} href="https://github.com/mutuajoseph/" target="_blank">
+                              <AiFillGithub  className={styles.social} style={{marginLeft: '1rem'}}/>
+                          </a>
+
+                          <a className={styles.socialLink} href="https://twitter.com/_JWMutua" target="_blank">
+                              <IoLogoTwitter className={styles.social} style={{marginLeft: '1rem'}}/>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </footer>
     </div>
   )
 }
